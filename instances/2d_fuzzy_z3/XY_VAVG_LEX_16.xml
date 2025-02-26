@@ -1,0 +1,30 @@
+<alloy builddate="2025-02-01T10:01:49.547Z">
+
+<instance bitwidth="4" maxseq="4" command="Run XY for exactly 2 B" filename="" context="Fuzzy" tnorm="Godelian">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/B" ID="4" parentID="2">
+   <atom label="B$0"/>
+   <atom label="B$1"/>
+</sig>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<sig label="this/A" ID="5" int="yes">
+   <atom label="B$0" value="1"/>
+   <atom label="B$1" value="0.9973316192626953"/>
+   <type ID="4"/>
+</sig>
+
+</instance>
+
+</alloy>

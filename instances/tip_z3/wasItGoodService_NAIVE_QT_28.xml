@@ -1,0 +1,124 @@
+<alloy builddate="2025-02-05T10:15:07.675Z">
+
+<instance bitwidth="4" maxseq="2" command="Check wasItGoodService for 2 but exactly 3 Rule" filename="" context="Fuzzy" tnorm="Godelian">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/Rating" ID="4" parentID="2" one="yes">
+   <atom label="Rating$0"/>
+</sig>
+
+<sig label="this/poor" ID="5" parentID="6" one="yes">
+   <atom label="poor$0"/>
+</sig>
+
+<sig label="this/good" ID="7" parentID="6" one="yes">
+   <atom label="good$0"/>
+</sig>
+
+<sig label="this/excellent" ID="8" parentID="6" one="yes">
+   <atom label="excellent$0"/>
+</sig>
+
+<sig label="this/null_s" ID="9" parentID="6" one="yes">
+   <atom label="null_s$0"/>
+</sig>
+
+<sig label="this/Service" ID="6" parentID="2" abstract="yes">
+</sig>
+
+<field label="R" ID="10" parentID="6">
+   <tuple> <atom label="poor$0"/> <atom label="rancid$0"/> <atom label="Rule$1"/> </tuple>
+   <tuple> <atom label="good$0"/> <atom label="null_f$0"/> <atom label="Rule$0"/> </tuple>
+   <tuple> <atom label="excellent$0"/> <atom label="delicious$0"/> <atom label="rule1$0"/> </tuple>
+   <types> <type ID="6"/> <type ID="11"/> <type ID="12"/> </types>
+</field>
+
+<field label="W" ID="13" parentID="6" int="yes">
+   <tuple> <atom label="poor$0"/> <atom label="rancid$0"/> <atom label="Rule$1"/><weight value="0.1145833333333327"/>
+ </tuple>
+   <tuple> <atom label="excellent$0"/> <atom label="delicious$0"/> <atom label="rule1$0"/><weight value="1"/>
+ </tuple>
+   <types> <type ID="6"/> <type ID="11"/> <type ID="12"/> </types>
+</field>
+
+<sig label="this/rancid" ID="14" parentID="11" one="yes">
+   <atom label="rancid$0"/>
+</sig>
+
+<sig label="this/average" ID="15" parentID="11" one="yes">
+   <atom label="average$0"/>
+</sig>
+
+<sig label="this/delicious" ID="16" parentID="11" one="yes">
+   <atom label="delicious$0"/>
+</sig>
+
+<sig label="this/null_f" ID="17" parentID="11" one="yes">
+   <atom label="null_f$0"/>
+</sig>
+
+<sig label="this/Food" ID="11" parentID="2" abstract="yes">
+</sig>
+
+<sig label="this/Tip" ID="18" parentID="2" one="yes">
+   <atom label="Tip$0"/>
+</sig>
+
+<field label="Y" ID="19" parentID="18" int="yes">
+   <tuple> <atom label="Tip$0"/> <atom label="rule1$0"/><weight value="0.66625"/>
+ </tuple>
+   <tuple> <atom label="Tip$0"/> <atom label="Rule$0"/><weight value="0.9"/>
+ </tuple>
+   <types> <type ID="18"/> <type ID="12"/> </types>
+</field>
+
+<sig label="this/rule1" ID="20" parentID="12" one="yes">
+   <atom label="rule1$0"/>
+</sig>
+
+<sig label="this/Rule" ID="12" parentID="2">
+   <atom label="Rule$0"/>
+   <atom label="Rule$1"/>
+</sig>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<sig label="this/S" ID="21" int="yes">
+   <atom label="Rating$0" value="0.9"/>
+   <type ID="4"/>
+</sig>
+
+<sig label="this/F" ID="22" int="yes">
+   <atom label="Rating$0" value="0.2656250000000001"/>
+   <type ID="4"/>
+</sig>
+
+<sig label="this/fuzzyS" ID="23" int="yes">
+   <atom label="excellent$0" value="1"/>
+   <type ID="6"/>
+</sig>
+
+<sig label="this/fuzzyF" ID="24" int="yes">
+   <atom label="rancid$0" value="0.1145833333333327"/>
+   <atom label="average$0" value="0.0625000000000007"/>
+   <type ID="11"/>
+</sig>
+
+<skolem label="$this/defuzzification" ID="m0">
+   <tuple> <atom label="Tip$0"/><weight value="0.5977570093457952"/>
+ </tuple>
+   <types> <type ID="18"/> </types>
+</skolem>
+
+</instance>
+
+</alloy>

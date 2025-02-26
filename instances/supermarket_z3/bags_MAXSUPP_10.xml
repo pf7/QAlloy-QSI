@@ -1,0 +1,83 @@
+<alloy builddate="2025-02-05T10:15:07.675Z">
+
+<instance bitwidth="4" maxseq="3" command="Run bags for 3" filename="" context="Integer" tnorm="Godelian">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/Bag" ID="4" parentID="2">
+   <atom label="Bag$0"/>
+   <atom label="Bag$1"/>
+   <atom label="Bag$2"/>
+</sig>
+
+<field label="contains" ID="5" parentID="4" int="yes">
+   <tuple> <atom label="Bag$0"/> <atom label="Tea$0"/><weight value="1"/>
+ </tuple>
+   <tuple> <atom label="Bag$0"/> <atom label="Coffee$0"/><weight value="1"/>
+ </tuple>
+   <tuple> <atom label="Bag$0"/> <atom label="Milk$0"/><weight value="1"/>
+ </tuple>
+   <tuple> <atom label="Bag$1"/> <atom label="Tea$0"/><weight value="1"/>
+ </tuple>
+   <tuple> <atom label="Bag$1"/> <atom label="Coffee$0"/><weight value="1"/>
+ </tuple>
+   <tuple> <atom label="Bag$1"/> <atom label="Milk$0"/><weight value="1"/>
+ </tuple>
+   <tuple> <atom label="Bag$2"/> <atom label="Tea$0"/><weight value="1"/>
+ </tuple>
+   <tuple> <atom label="Bag$2"/> <atom label="Coffee$0"/><weight value="1"/>
+ </tuple>
+   <tuple> <atom label="Bag$2"/> <atom label="Milk$0"/><weight value="1"/>
+ </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<sig label="this/Oz" ID="7" parentID="2" one="yes">
+   <atom label="Oz$0"/>
+</sig>
+
+<sig label="this/Tea" ID="8" parentID="6" one="yes">
+   <atom label="Tea$0"/>
+</sig>
+
+<sig label="this/Coffee" ID="9" parentID="6" one="yes">
+   <atom label="Coffee$0"/>
+</sig>
+
+<sig label="this/Milk" ID="10" parentID="6" one="yes">
+   <atom label="Milk$0"/>
+</sig>
+
+<sig label="this/Product" ID="6" parentID="2" abstract="yes">
+</sig>
+
+<field label="weight" ID="11" parentID="6" int="yes">
+   <tuple> <atom label="Tea$0"/> <atom label="Oz$0"/><weight value="3"/>
+ </tuple>
+   <tuple> <atom label="Coffee$0"/> <atom label="Oz$0"/><weight value="9"/>
+ </tuple>
+   <tuple> <atom label="Milk$0"/> <atom label="Oz$0"/><weight value="10"/>
+ </tuple>
+   <types> <type ID="6"/> <type ID="7"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<sig label="this/stock" ID="12" int="yes">
+   <atom label="Tea$0" value="3"/>
+   <atom label="Coffee$0" value="3"/>
+   <atom label="Milk$0" value="3"/>
+   <type ID="6"/>
+</sig>
+
+</instance>
+
+</alloy>

@@ -1,0 +1,126 @@
+<alloy builddate="2025-02-01T10:01:49.547Z">
+
+<instance bitwidth="4" maxseq="4" command="Run highTemperature" filename="" context="Fuzzy" tnorm="Godelian">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/Celsius" ID="4" parentID="2" one="yes">
+   <atom label="Celsius$0"/>
+</sig>
+
+<sig label="this/cold" ID="5" parentID="6" one="yes">
+   <atom label="cold$0"/>
+</sig>
+
+<sig label="this/warm" ID="7" parentID="6" one="yes">
+   <atom label="warm$0"/>
+</sig>
+
+<sig label="this/hot" ID="8" parentID="6" one="yes">
+   <atom label="hot$0"/>
+</sig>
+
+<sig label="this/Temperature" ID="6" parentID="2" abstract="yes">
+</sig>
+
+<field label="R" ID="9" parentID="6">
+   <tuple> <atom label="cold$0"/> <atom label="dry$0"/> <atom label="mid$0"/> </tuple>
+   <tuple> <atom label="cold$0"/> <atom label="wet$0"/> <atom label="high$0"/> </tuple>
+   <tuple> <atom label="warm$0"/> <atom label="normal$0"/> <atom label="low$0"/> </tuple>
+   <tuple> <atom label="hot$0"/> <atom label="dry$0"/> <atom label="low$0"/> </tuple>
+   <types> <type ID="6"/> <type ID="10"/> <type ID="11"/> </types>
+</field>
+
+<sig label="this/Percentage" ID="12" parentID="2" one="yes">
+   <atom label="Percentage$0"/>
+</sig>
+
+<sig label="this/dry" ID="13" parentID="10" one="yes">
+   <atom label="dry$0"/>
+</sig>
+
+<sig label="this/normal" ID="14" parentID="10" one="yes">
+   <atom label="normal$0"/>
+</sig>
+
+<sig label="this/wet" ID="15" parentID="10" one="yes">
+   <atom label="wet$0"/>
+</sig>
+
+<sig label="this/Humidity" ID="10" parentID="2" abstract="yes">
+</sig>
+
+<sig label="this/Power" ID="16" parentID="2" one="yes">
+   <atom label="Power$0"/>
+</sig>
+
+<sig label="this/low" ID="17" parentID="11" one="yes">
+   <atom label="low$0"/>
+</sig>
+
+<sig label="this/mid" ID="18" parentID="11" one="yes">
+   <atom label="mid$0"/>
+</sig>
+
+<sig label="this/high" ID="19" parentID="11" one="yes">
+   <atom label="high$0"/>
+</sig>
+
+<sig label="this/Heater" ID="11" parentID="2" abstract="yes">
+</sig>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<sig label="this/T" ID="20" int="yes">
+   <atom label="Celsius$0" value="0.871625"/>
+   <type ID="4"/>
+</sig>
+
+<sig label="this/fuzzyT" ID="21" int="yes">
+   <atom label="hot$0" value="1"/>
+   <type ID="6"/>
+</sig>
+
+<sig label="this/H" ID="22" int="yes">
+   <type ID="12"/>
+</sig>
+
+<sig label="this/fuzzyH" ID="23" int="yes">
+   <atom label="dry$0" value="1"/>
+   <type ID="10"/>
+</sig>
+
+<sig label="this/P" ID="24" int="yes">
+   <type ID="16"/>
+</sig>
+
+<sig label="this/fuzzyP" ID="25" int="yes">
+   <atom label="low$0" value="1"/>
+   <type ID="11"/>
+</sig>
+
+<skolem label="$this/ruleBase" ID="m0">
+   <tuple> <atom label="cold$0"/> <atom label="dry$0"/> <atom label="mid$0"/> </tuple>
+   <tuple> <atom label="cold$0"/> <atom label="wet$0"/> <atom label="high$0"/> </tuple>
+   <tuple> <atom label="warm$0"/> <atom label="normal$0"/> <atom label="low$0"/> </tuple>
+   <tuple> <atom label="hot$0"/> <atom label="dry$0"/> <atom label="low$0"/> </tuple>
+   <types> <type ID="6"/> <type ID="10"/> <type ID="11"/> </types>
+</skolem>
+
+<skolem label="$this/I" ID="m1">
+   <tuple> <atom label="low$0"/><weight value="1"/>
+ </tuple>
+   <types> <type ID="11"/> </types>
+</skolem>
+
+</instance>
+
+</alloy>

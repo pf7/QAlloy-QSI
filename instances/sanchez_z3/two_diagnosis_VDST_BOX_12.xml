@@ -1,0 +1,186 @@
+<alloy builddate="2025-02-01T10:01:49.547Z">
+
+<instance bitwidth="4" maxseq="4" command="Run two_diagnosis for 1 Patient" filename="" context="Fuzzy" tnorm="Godelian">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/Patient" ID="4" parentID="2">
+   <atom label="Patient$0"/>
+</sig>
+
+<field label="Q" ID="5" parentID="4" int="yes">
+   <tuple> <atom label="Patient$0"/> <atom label="StmPn$0"/><weight value="0.04110107421875"/>
+ </tuple>
+   <tuple> <atom label="Patient$0"/> <atom label="Hdche$0"/><weight value="0.04110107421875"/>
+ </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<sig label="this/Temp" ID="7" parentID="6" one="yes">
+   <atom label="Temp$0"/>
+</sig>
+
+<sig label="this/Cough" ID="8" parentID="6" one="yes">
+   <atom label="Cough$0"/>
+</sig>
+
+<sig label="this/StmPn" ID="9" parentID="6" one="yes">
+   <atom label="StmPn$0"/>
+</sig>
+
+<sig label="this/ChtPn" ID="10" parentID="6" one="yes">
+   <atom label="ChtPn$0"/>
+</sig>
+
+<sig label="this/Hdche" ID="11" parentID="6" one="yes">
+   <atom label="Hdche$0"/>
+</sig>
+
+<sig label="this/Symptom" ID="6" parentID="2" abstract="yes">
+</sig>
+
+<field label="R" ID="12" parentID="6" int="yes">
+   <tuple> <atom label="Temp$0"/> <atom label="ViralFv$0"/><weight value="0.4"/>
+ </tuple>
+   <tuple> <atom label="Temp$0"/> <atom label="Typhoid$0"/><weight value="0.3"/>
+ </tuple>
+   <tuple> <atom label="Temp$0"/> <atom label="StmPrb$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="Temp$0"/> <atom label="Malaria$0"/><weight value="0.7"/>
+ </tuple>
+   <tuple> <atom label="Temp$0"/> <atom label="ChtPrb$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="ViralFv$0"/><weight value="0.4"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="Typhoid$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="StmPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="Malaria$0"/><weight value="0.7"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="ChtPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="StmPn$0"/> <atom label="ViralFv$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="StmPn$0"/> <atom label="Typhoid$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="StmPn$0"/> <atom label="StmPrb$0"/><weight value="0.8"/>
+ </tuple>
+   <tuple> <atom label="StmPn$0"/> <atom label="ChtPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="ViralFv$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="Typhoid$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="StmPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="Malaria$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="ChtPrb$0"/><weight value="0.8"/>
+ </tuple>
+   <tuple> <atom label="Hdche$0"/> <atom label="ViralFv$0"/><weight value="0.3"/>
+ </tuple>
+   <tuple> <atom label="Hdche$0"/> <atom label="Typhoid$0"/><weight value="0.6"/>
+ </tuple>
+   <tuple> <atom label="Hdche$0"/> <atom label="StmPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="Hdche$0"/> <atom label="Malaria$0"/><weight value="0.2"/>
+ </tuple>
+   <types> <type ID="6"/> <type ID="13"/> </types>
+</field>
+
+<sig label="this/ViralFv" ID="14" parentID="13" one="yes">
+   <atom label="ViralFv$0"/>
+</sig>
+
+<sig label="this/Typhoid" ID="15" parentID="13" one="yes">
+   <atom label="Typhoid$0"/>
+</sig>
+
+<sig label="this/StmPrb" ID="16" parentID="13" one="yes">
+   <atom label="StmPrb$0"/>
+</sig>
+
+<sig label="this/Malaria" ID="17" parentID="13" one="yes">
+   <atom label="Malaria$0"/>
+</sig>
+
+<sig label="this/ChtPrb" ID="18" parentID="13" one="yes">
+   <atom label="ChtPrb$0"/>
+</sig>
+
+<sig label="this/Disease" ID="13" parentID="2" abstract="yes">
+</sig>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<skolem label="$this/diagnosis" ID="m0">
+   <tuple> <atom label="Patient$0"/> <atom label="ViralFv$0"/> </tuple>
+   <tuple> <atom label="Patient$0"/> <atom label="Typhoid$0"/> </tuple>
+   <tuple> <atom label="Patient$0"/> <atom label="StmPrb$0"/> </tuple>
+   <tuple> <atom label="Patient$0"/> <atom label="Malaria$0"/> </tuple>
+   <tuple> <atom label="Patient$0"/> <atom label="ChtPrb$0"/> </tuple>
+   <types> <type ID="4"/> <type ID="13"/> </types>
+</skolem>
+
+<skolem label="$this/expert_R" ID="m1">
+   <tuple> <atom label="Temp$0"/> <atom label="ViralFv$0"/><weight value="0.4"/>
+ </tuple>
+   <tuple> <atom label="Temp$0"/> <atom label="Typhoid$0"/><weight value="0.3"/>
+ </tuple>
+   <tuple> <atom label="Temp$0"/> <atom label="StmPrb$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="Temp$0"/> <atom label="Malaria$0"/><weight value="0.7"/>
+ </tuple>
+   <tuple> <atom label="Temp$0"/> <atom label="ChtPrb$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="ViralFv$0"/><weight value="0.4"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="Typhoid$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="StmPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="Malaria$0"/><weight value="0.7"/>
+ </tuple>
+   <tuple> <atom label="Cough$0"/> <atom label="ChtPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="StmPn$0"/> <atom label="ViralFv$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="StmPn$0"/> <atom label="Typhoid$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="StmPn$0"/> <atom label="StmPrb$0"/><weight value="0.8"/>
+ </tuple>
+   <tuple> <atom label="StmPn$0"/> <atom label="ChtPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="ViralFv$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="Typhoid$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="StmPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="Malaria$0"/><weight value="0.1"/>
+ </tuple>
+   <tuple> <atom label="ChtPn$0"/> <atom label="ChtPrb$0"/><weight value="0.8"/>
+ </tuple>
+   <tuple> <atom label="Hdche$0"/> <atom label="ViralFv$0"/><weight value="0.3"/>
+ </tuple>
+   <tuple> <atom label="Hdche$0"/> <atom label="Typhoid$0"/><weight value="0.6"/>
+ </tuple>
+   <tuple> <atom label="Hdche$0"/> <atom label="StmPrb$0"/><weight value="0.2"/>
+ </tuple>
+   <tuple> <atom label="Hdche$0"/> <atom label="Malaria$0"/><weight value="0.2"/>
+ </tuple>
+   <types> <type ID="6"/> <type ID="13"/> </types>
+</skolem>
+
+</instance>
+
+</alloy>

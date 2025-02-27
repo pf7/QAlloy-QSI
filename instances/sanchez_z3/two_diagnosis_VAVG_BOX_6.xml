@@ -1,4 +1,4 @@
-<alloy builddate="2025-02-01T10:01:49.547Z">
+<alloy builddate="2025-02-26T18:49:57.733Z">
 
 <instance bitwidth="4" maxseq="4" command="Run two_diagnosis for 1 Patient" filename="" context="Fuzzy" tnorm="Godelian">
 
@@ -15,7 +15,7 @@
    <atom label="Patient$0"/>
 </sig>
 
-<field label="Q" ID="5" parentID="4" int="yes">
+<field label="symptoms" ID="5" parentID="4" int="yes">
    <tuple> <atom label="Patient$0"/> <atom label="StmPn$0"/><weight value="0.0963541666666666"/>
  </tuple>
    <tuple> <atom label="Patient$0"/> <atom label="Hdche$0"/><weight value="0.0963541666666666"/>
@@ -46,7 +46,7 @@
 <sig label="this/Symptom" ID="6" parentID="2" abstract="yes">
 </sig>
 
-<field label="R" ID="12" parentID="6" int="yes">
+<field label="pathology" ID="12" parentID="6" int="yes">
    <tuple> <atom label="Temp$0"/> <atom label="ViralFv$0"/><weight value="0.4"/>
  </tuple>
    <tuple> <atom label="Temp$0"/> <atom label="Typhoid$0"/><weight value="0.3"/>

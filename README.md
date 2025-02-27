@@ -7,8 +7,8 @@ The benchmark is performed using the Max-SMT Solver $\nu\text{Z}$, evaluating th
 ## Solution Iteration Operations
 
 The quantitative solution iteration operations being evaluated maximize the distance according to a specific goal.
-The following table presents the operation, their identifier in QAlloy and in the *.csv* files, as well as a brief description.
-$\mathsf{next}^{\emptyset}_{S}$ and $\mathsf{next}^{B}_{S}$ focus in structure-level changes, while from the operations from $\mathsf{next}^{\emptyset}_{Q}$ onwards maintain the underlying structure and produce changes in the quantities of each relation.
+The following table presents the operation, their identifier in QAlloy and in the *.csv* files, as well as a brief description. 
+$\mathsf{next}^{\emptyset}\_{S}$ and $\mathsf{next}^{B}\_{S}$ focus in structure-level changes, while from the operations from $\mathsf{next}^{\emptyset}_{Q}$ onwards maintain the underlying structure and produce changes in the quantities of each relation.
 
 | Operation                         | Goal            | Id         | Description |
 | ---                               | ---             | ---        | --- |
